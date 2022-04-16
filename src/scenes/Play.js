@@ -9,12 +9,12 @@ class Play extends Phaser.Scene
     preload()
     {
         this.load.image('rocket', 'assets/timallen1.png');
-        this.load.image('spaceship','assets/timallen1.png');
-        this.load.image('starfield', 'assets/timallen1.png');
+        this.load.image('spaceship','assets/timallen2.png');
+        this.load.image('starfield', 'assets/manyTim.png');
         this.load.spritesheet('explosion', 'assets/explosion.png', {frameWidth: 64, frameHeight: 32, startFrame: 0, endFrame: 9});
 
         this.load.audio('sfx_select', 'assets/Grunt.wav');
-        this.load.audio('sfx_explosion', 'assets/Grunt.wav');
+        this.load.audio('sfx_explosion', 'assets/tnurG.wav');
         this.load.audio('sfx_rocket', 'assets/Grunt.wav');
     }
 

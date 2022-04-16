@@ -8,7 +8,7 @@ class Menu extends Phaser.Scene
     preload()
     {
         this.load.audio('sfx_select', 'assets/Grunt.wav');
-        this.load.audio('sfx_explosion', 'assets/Grunt.wav');
+        this.load.audio('sfx_explosion', 'assets/tnurG.wav');
         this.load.audio('sfx_rocket', 'assets/Grunt.wav');
     }
 
