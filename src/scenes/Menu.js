@@ -10,6 +10,8 @@ class Menu extends Phaser.Scene
         this.load.audio('sfx_select', 'assets/Grunt.wav');
         this.load.audio('sfx_explosion', 'assets/tnurG.wav');
         this.load.audio('sfx_rocket', 'assets/Grunt.wav');
+        
+        this.load.image('backdrop', 'assets/santaTim.png');
     }
 
     create()
@@ -27,7 +29,10 @@ class Menu extends Phaser.Scene
             fixedWidth: 0
         } 
         
-        this.add.text(game.config.width/2, game.config.height/2 - borderUISize - borderPadding, 'ROCKET PATROL', menuConfig).setOrigin(0.5);
+        this.add.sprite(0,0, 'backdrop').setOrigin(0,0);
+        //backdrop.displayWidth = game.config.width;
+
+        this.add.text(game.config.width/2, game.config.height/2 - borderUISize - borderPadding, 'AEUHHH????', menuConfig).setOrigin(0.5);
         this.add.text(game.config.width/2, game.config.height/2, 'Use arrow keys to move & (F) to fire', menuConfig).setOrigin(0.5);
         menuConfig.backgroundColor = '#00FF00';
         menuConfig.color = '#000';
@@ -53,7 +58,7 @@ class Menu extends Phaser.Scene
           // hard mode
           game.settings = {
             spaceshipSpeed: 4,
-            gameTimer: 3000    
+            gameTimer: 45000    
           }
           this.sound.play('sfx_select');
           this.scene.start('playScene');    
