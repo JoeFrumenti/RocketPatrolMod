@@ -1,3 +1,15 @@
+// Name: Joe Frumenti
+// Project: Tim Allen Rocket Patrol Mod
+// Date: 4/18/2022
+// time to complete: 5 hours
+
+// point breakdown:
+// change theme 60 points
+// visible timer 10 points
+// adding time to timer via killing enemies 20 points
+// simultaneous 2 player mode 30 points
+// total: 120 points
+
 let config = {
     type: Phaser.AUTO,
     width: 640,
